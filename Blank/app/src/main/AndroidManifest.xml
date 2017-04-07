@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="trainedge.blank">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -19,6 +21,44 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".HomeActivity"
+            android:label="OLIO"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name=".FacebookActivity"
+            android:label="@string/title_activity_facebook"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="trainedge.blank.MainActivity" />
+        </activity>
+        <activity
+            android:name=".InstagramActivity"
+            android:label="@string/title_activity_instagram"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TwitterActivity"
+            android:label="@string/title_activity_twitter"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".GoogleActivity"
+            android:label="@string/title_activity_google"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PinterestActivity"
+            android:label="@string/title_activity_pinterest"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RedditActivity"
+            android:label="@string/title_activity_reddit"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

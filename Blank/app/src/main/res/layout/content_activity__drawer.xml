@@ -10,24 +10,27 @@
 
     <ImageView
         android:id="@+id/ivFacebook"
-        android:layout_width="96dp"
+        android:layout_width="80dp"
         android:layout_height="96dp"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="53dp"
+        android:layout_marginTop="92dp"
         android:paddingEnd="0dp"
         android:paddingRight="8dp"
-        app:srcCompat="@drawable/fb"
-        android:layout_marginLeft="39dp"
+        app:layout_constraintBottom_toTopOf="@+id/ivInstagram"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="108dp" />
+        app:layout_constraintVertical_bias="0.461"
+        app:srcCompat="@drawable/fb" />
 
     <ImageView
         android:id="@+id/ivGoogle"
-        android:layout_width="96dp"
+        android:layout_width="80dp"
         android:layout_height="96dp"
-        android:layout_marginBottom="51dp"
+        android:layout_marginBottom="100dp"
         android:layout_marginLeft="102dp"
         android:layout_marginRight="32dp"
-        android:layout_marginTop="108dp"
+        android:layout_marginTop="92dp"
         android:paddingEnd="0dp"
         android:paddingRight="8dp"
         app:layout_constraintBottom_toTopOf="@+id/ivTwitter"
@@ -35,39 +38,36 @@
         app:layout_constraintLeft_toRightOf="@+id/ivFacebook"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.307"
+        app:layout_constraintVertical_bias="0.461"
         app:srcCompat="@drawable/go" />
 
     <ImageView
         android:id="@+id/ivTwitter"
-        android:layout_width="96dp"
+        android:layout_width="80dp"
         android:layout_height="96dp"
+        android:layout_marginBottom="149dp"
+        android:layout_marginLeft="102dp"
+        android:layout_marginRight="32dp"
         android:cropToPadding="false"
         android:paddingEnd="0dp"
         android:paddingRight="8dp"
-        app:srcCompat="@drawable/tw"
-        app:layout_constraintLeft_toRightOf="@+id/ivInstagram"
-        android:layout_marginLeft="102dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="142dp"
-        android:layout_marginRight="32dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@+id/ivInstagram"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintHorizontal_bias="0.0" />
+        app:srcCompat="@drawable/tw" />
 
     <ImageView
         android:id="@+id/ivInstagram"
-        android:layout_width="96dp"
+        android:layout_width="80dp"
         android:layout_height="96dp"
+        android:layout_marginBottom="149dp"
+        android:layout_marginLeft="53dp"
         android:paddingEnd="0dp"
         android:paddingRight="8dp"
-        app:srcCompat="@drawable/ins"
-        android:layout_marginTop="51dp"
-        app:layout_constraintTop_toBottomOf="@+id/ivFacebook"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="32dp"
-        app:layout_constraintVertical_bias="0.201"
-        android:layout_marginLeft="39dp"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:srcCompat="@drawable/ins" />
 
     <TextView
         android:id="@+id/textView4"
@@ -76,14 +76,11 @@
         android:text="Want everything at one plece"
         android:textColor="@android:color/black"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="71dp"
-        tools:layout_editor_absoluteY="422dp" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Go Get Olio!" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/ivInstagram"
+        app:layout_constraintHorizontal_bias="0.503" />
 
     <TextView
         android:id="@+id/textView6"
@@ -93,6 +90,9 @@
         android:textColor="@color/colorPrimaryDark"
         android:textSize="18sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="135dp"
-        tools:layout_editor_absoluteY="453dp" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
 </android.support.constraint.ConstraintLayout>
