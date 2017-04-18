@@ -28,10 +28,10 @@ public class TwitterActivity extends AppCompatActivity {
         wbTwitter.loadUrl(TWITTER_LINK);
     }
 
-        private class  TwCallback extends WebViewClient{
-            @Override
-         public boolean shouldOverrideUrlLoading (WebView view, WebResourceRequest request) {
-                return false;
+    private class TwCallback extends WebViewClient {
+        @Override
+        public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
+            return false;
         }
     }
 
