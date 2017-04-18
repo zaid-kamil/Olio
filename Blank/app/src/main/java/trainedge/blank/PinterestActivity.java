@@ -1,11 +1,8 @@
 package trainedge.blank;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -22,7 +19,7 @@ public class PinterestActivity extends AppCompatActivity {
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        WebView wbPinterest = (WebView) findViewById(R.id.......);
+        WebView wbPinterest = (WebView) findViewById(R.id.ivPinterest);
         wbPinterest.getSettings().setJavaScriptEnabled(true);
         wbPinterest.setWebViewClient(new PintCallback());
         wbPinterest.loadUrl(PINTEREST_LINK);

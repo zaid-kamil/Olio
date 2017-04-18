@@ -36,6 +36,8 @@ import com.google.firebase.auth.GoogleAuthProvider;
 public class HomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, View.OnClickListener {
 
 
+    public static final String POSITION = "trainedge.blank.POS";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -91,18 +93,33 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.ivFacebook:
-                startActivity(new Intent(this,FacebookActivity.class));
+                Intent fbIntent = new Intent(this, FacebookActivity.class);
+                fbIntent.putExtra(POSITION,0);
+                startActivity(fbIntent);
                 break;
             case R.id.ivGoogle:
-                startActivity(new Intent(this,GoogleActivity.class));
+                Intent googleIntent = new Intent(this, GoogleActivity.class);
+                googleIntent.putExtra(POSITION,3);
+                startActivity(googleIntent);
                 break;
             case R.id.ivTwitter:
                 startActivity(new Intent(this, TwitterActivity.class));
                 break;
             case R.id.ivInstagram:
                 startActivity(new Intent(this, InstagramActivity.class));
-
                 break;
+            case R.id.wbTinder:
+                startActivity(new Intent(this, TinderActivity.class));
+            case R.id.wbTumbler:
+                startActivity(new Intent(this, TumblerActivity.class));
+            case R.id.ivPinterest:
+                startActivity(new Intent(this, PinterestActivity.class));
+            case R.id.wvLinkedin:
+                startActivity(new Intent(this, LinkedinActivity.class));
+            case R.id.wbReddit:
+                startActivity(new Intent(this, RedditActivity.class));
+            case R.id.ivFlickr:
+                startActivity(new Intent(this, FlickrActivity.class));
         }
     }
 }

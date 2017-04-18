@@ -58,6 +58,26 @@
         <activity
             android:name=".RedditActivity"
             android:label="@string/title_activity_reddit"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TinderActivity"
+            android:label="@string/title_activity_tinder"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LinkedinActivity"
+            android:label="@string/title_activity_linkedin"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TumblerActivity"
+            android:label="@string/title_activity_tumbler"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FlickrActivity"
+            android:label="@string/title_activity_flickr"
+            android:theme="@style/AppTheme.NoActionBar" />
+       <activity
+            android:name=".SocialActivity"
+            android:label="@string/title_activity_social"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
