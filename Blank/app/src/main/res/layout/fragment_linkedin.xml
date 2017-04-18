@@ -4,10 +4,9 @@
     android:layout_height="match_parent"
     tools:context="trainedge.blank.fragments.LinkedinFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+   <WebView
+       android:id="@+id/wvLinkedin"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"></WebView>
 
 </FrameLayout>

@@ -32,8 +32,8 @@ public class InstagramFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
 
-        final View inflate = inflater.inflate(R.layout.fragment_instagram, container, false);
-        View view = inflate;
+        final View view = inflater.inflate(R.layout.fragment_instagram, container, false);
+
         WebView wbInstagram= (WebView) view.findViewById(R.id.ivInstagram);
 
         wbInstagram.getSettings().setJavaScriptEnabled(true);

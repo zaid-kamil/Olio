@@ -31,8 +31,8 @@ public class TwitterFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View inflate = inflater.inflate(R.layout.fragment_twitter, container, false);
-        View view = inflate;
+        View view = inflater.inflate(R.layout.fragment_twitter, container, false);
+
         WebView wbTwitter = (WebView) view.findViewById(R.id.ivTwitter);
         wbTwitter.getSettings().setJavaScriptEnabled(true);
         wbTwitter.setWebViewClient(new TwCallback());

@@ -30,8 +30,8 @@ public class TumblerFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
 
-        View inflate = inflater.inflate(R.layout.fragment_tumbler, container, false);
-        View view = inflate;
+        View view = inflater.inflate(R.layout.fragment_tumbler, container, false);
+
         WebView wbTumbler= (WebView) view.findViewById(R.id.wbTumbler);
 
         wbTumbler.getSettings().setJavaScriptEnabled(true);

@@ -29,8 +29,8 @@ public class FacebookFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View inflate = inflater.inflate(R.layout.fragment_facebook, container, false);
-        View view = inflate;
+        View view = inflater.inflate(R.layout.fragment_facebook, container, false);
+
         WebView wbFacebook= (WebView) view.findViewById(R.id.wvFacebook);
 
         wbFacebook.getSettings().setJavaScriptEnabled(true);

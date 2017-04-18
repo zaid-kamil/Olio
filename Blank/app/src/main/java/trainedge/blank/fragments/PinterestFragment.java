@@ -34,7 +34,7 @@ public class PinterestFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_pinterest, container, false);
 
 
-        WebView wbPinterest = (WebView) view.findViewById(R.id.ivPinterest);
+        WebView wbPinterest = (WebView) view.findViewById(R.id.wbPinterest);
         wbPinterest.getSettings().setJavaScriptEnabled(true);
         wbPinterest.setWebViewClient(new PintCallback());
         wbPinterest.loadUrl(PINTEREST_LINK);

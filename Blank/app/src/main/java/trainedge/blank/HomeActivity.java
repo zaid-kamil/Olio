@@ -93,12 +93,12 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.ivFacebook:
-                Intent fbIntent = new Intent(this, FacebookActivity.class);
+                Intent fbIntent = new Intent(this, SocialActivity.class);
                 fbIntent.putExtra(POSITION,0);
                 startActivity(fbIntent);
                 break;
             case R.id.ivGoogle:
-                Intent googleIntent = new Intent(this, GoogleActivity.class);
+                Intent googleIntent = new Intent(this, SocialActivity.class);
                 googleIntent.putExtra(POSITION,3);
                 startActivity(googleIntent);
                 break;
@@ -110,16 +110,22 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 break;
             case R.id.wbTinder:
                 startActivity(new Intent(this, TinderActivity.class));
+                break;
             case R.id.wbTumbler:
                 startActivity(new Intent(this, TumblerActivity.class));
+                break;
             case R.id.ivPinterest:
                 startActivity(new Intent(this, PinterestActivity.class));
+                break;
             case R.id.wvLinkedin:
                 startActivity(new Intent(this, LinkedinActivity.class));
+                break;
             case R.id.wbReddit:
                 startActivity(new Intent(this, RedditActivity.class));
+                break;
             case R.id.ivFlickr:
                 startActivity(new Intent(this, FlickrActivity.class));
+                break;
         }
     }
 }

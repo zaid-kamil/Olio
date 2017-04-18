@@ -30,8 +30,8 @@ public class RedditFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View inflate = inflater.inflate(R.layout.fragment_reddit, container, false);
-        View view = inflate;
+        View view = inflater.inflate(R.layout.fragment_reddit, container, false);
+
         WebView wbReddit= (WebView) view.findViewById(R.id.wbReddit);
 
         wbReddit.getSettings().setJavaScriptEnabled(true);
