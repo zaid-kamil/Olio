@@ -75,10 +75,15 @@
             android:name=".FlickrActivity"
             android:label="@string/title_activity_flickr"
             android:theme="@style/AppTheme.NoActionBar" />
-       <activity
+        <activity
             android:name=".SocialActivity"
             android:label="@string/title_activity_social"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".feedbackActivity"
+            android:label="@string/title_activity_feedback"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".FeedbackActivity"></activity>
     </application>
 
 </manifest>
