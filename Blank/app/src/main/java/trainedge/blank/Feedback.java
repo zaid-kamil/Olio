@@ -1,20 +1,20 @@
 package trainedge.blank;
 
 
-        import android.content.Intent;
-        import android.os.Bundle;
-        import android.support.v7.app.AppCompatActivity;
-        import android.support.v7.widget.Toolbar;
-        import android.text.Editable;
-        import android.text.TextWatcher;
-        import android.view.View;
-        import android.widget.Button;
-        import android.widget.EditText;
-        import android.widget.ImageButton;
-        import android.widget.Toast;
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageButton;
+import android.widget.Toast;
 
 
-class Feedback extends AppCompatActivity implements View.OnClickListener, TextWatcher {
+public class Feedback extends AppCompatActivity implements View.OnClickListener, TextWatcher {
 
     private EditText erfeed, ermail;
     int rating;
@@ -75,8 +75,8 @@ class Feedback extends AppCompatActivity implements View.OnClickListener, TextWa
         }
         Intent emailint = new Intent(Intent.ACTION_SEND);
         emailint.setType("text/html");
-        emailint.putExtra(Intent.EXTRA_EMAIL, new String[]{"thisisut1905@gmail.com"});
-        emailint.putExtra(Intent.EXTRA_EMAIL, new String[]{"dixitprashant762@gmail.com"});
+        emailint.putExtra(Intent.EXTRA_EMAIL, new String[]{"oliostuffs@gmail.com"});
+
         emailint.putExtra(Intent.EXTRA_SUBJECT, "Feedback");
         emailint.putExtra(Intent.EXTRA_TEXT, "Hi,\n \t You have got a feedback. And user's thought about the app are - \"" +
                 "" + erfeed.getText().toString() + "\". To write him back please use the email \"" +

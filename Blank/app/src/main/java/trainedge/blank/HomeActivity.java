@@ -70,15 +70,25 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
+        if (id == R.id.navabout) {
+            Intent abt=new Intent(HomeActivity.this,aboutActivity.class);
+            startActivity(abt);
             // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.navSetting) {
+            Intent set=new Intent(HomeActivity.this,SettinActivity.class);
+            startActivity(set);
 
-        } else if (id == R.id.nav_slideshow) {
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.navFeedabck) {
+            Intent fed=new Intent(HomeActivity.this,Feedback.class);
+            startActivity(fed);
+
+        } else if (id == R.id.nav_send) {
+
 
         } else if (id == R.id.nav_share) {
+
+
             Intent share = new Intent(Intent.ACTION_SEND);
             share.setType("text/plain");
             share.putExtra(Intent.EXTRA_SUBJECT, "Olio");
