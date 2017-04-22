@@ -1,171 +1,276 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="trainedge.blank.SettinActivity"
-    tools:showIn="@layout/activity_settin">
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="324dp">
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Facebook"
-        android:textColor="@color/com_facebook_blue"
-        android:textSize="14sp"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="35dp" />
+            <TextView
+                android:id="@+id/ivFacebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:padding="10dp"
+                android:text="Facebook"
+                android:textColor="@color/com_facebook_blue"
+                android:textSize="14sp" />
 
-    <Switch
-        android:id="@+id/fbSwitch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="247dp"
-        tools:layout_editor_absoluteY="16dp" />
+            <Switch
+                android:id="@+id/fbSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:layout_editor_absoluteX="330dp"
+                tools:layout_editor_absoluteY="61dp" />
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Google+"
-        android:textColor="@android:color/holo_red_dark"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="57dp" />
+        </LinearLayout>
 
-    <Switch
-        android:id="@+id/gSwitch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="247dp"
-        tools:layout_editor_absoluteY="57dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="324dp">
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Instagram"
-        android:textColor="@color/colorPrimaryDark"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="100dp" />
+            <TextView
+                android:id="@+id/ivInstagram"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:padding="10dp"
+                android:text="Instagram"
+                android:textColor="@color/com_facebook_blue"
+                android:textSize="14sp" />
 
-    <Switch
-        android:id="@+id/insSwitch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="247dp"
-        tools:layout_editor_absoluteY="100dp" />
+            <Switch
+                android:id="@+id/insSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:layout_editor_absoluteX="330dp"
+                tools:layout_editor_absoluteY="61dp" />
 
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Twitter"
-        android:textColor="@color/com_facebook_messenger_blue"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="139dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="324dp">
 
-    <Switch
-        android:id="@+id/twSwitch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="247dp"
-        tools:layout_editor_absoluteY="139dp" />
+            <TextView
+                android:id="@+id/ivTwitter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:padding="10dp"
+                android:text="Twitter"
+                android:textColor="@color/com_facebook_blue"
+                android:textSize="14sp" />
 
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Linkedin"
-        android:textColor="@color/com_facebook_button_background_color_pressed"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="186dp" />
+            <Switch
+                android:id="@+id/twSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:layout_editor_absoluteX="330dp"
+                tools:layout_editor_absoluteY="61dp" />
 
-    <Switch
-        android:id="@+id/linSwitch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="247dp"
-        tools:layout_editor_absoluteY="186dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="324dp">
 
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Reddit"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="235dp" />
+            <TextView
+                android:id="@+id/ivGoogle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:padding="10dp"
+                android:text="Google"
+                android:textColor="@color/com_facebook_blue"
+                android:textSize="14sp" />
 
-    <Switch
-        android:id="@+id/redSwitch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="247dp"
-        tools:layout_editor_absoluteY="235dp" />
+            <Switch
+                android:id="@+id/gSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:layout_editor_absoluteX="330dp"
+                tools:layout_editor_absoluteY="61dp" />
 
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Pinterest"
-        android:textColor="?attr/colorPrimaryDark"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="274dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="324dp">
 
-    <Switch
-        android:id="@+id/pintSwitch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="247dp"
-        tools:layout_editor_absoluteY="274dp" />
+            <TextView
+                android:id="@+id/ivPinterest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:padding="10dp"
+                android:text="Pinterest"
+                android:textColor="@color/com_facebook_blue"
+                android:textSize="14sp" />
 
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tinder"
-        android:textColor="@android:color/holo_red_light"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="318dp" />
+            <Switch
+                android:id="@+id/pintSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:layout_editor_absoluteX="330dp"
+                tools:layout_editor_absoluteY="61dp" />
 
-    <Switch
-        android:id="@+id/tindSwitch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="247dp"
-        tools:layout_editor_absoluteY="318dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="324dp">
 
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Flickr"
-        android:textColor="@color/com_facebook_button_background_color"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="357dp" />
+            <TextView
+                android:id="@+id/ivFlickr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:padding="10dp"
+                android:text="Flickr"
+                android:textColor="@color/com_facebook_blue"
+                android:textSize="14sp" />
 
-    <Switch
-        android:id="@+id/flicSwitch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="247dp"
-        tools:layout_editor_absoluteY="357dp" />
+            <Switch
+                android:id="@+id/flicSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:layout_editor_absoluteX="330dp"
+                tools:layout_editor_absoluteY="61dp" />
 
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tumbler"
-        android:textColor="@color/colorPrimaryDark"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="401dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="324dp">
 
-    <Switch
-        android:id="@+id/tumbSwitch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="247dp"
-        tools:layout_editor_absoluteY="401dp" />
-</android.support.constraint.ConstraintLayout>
+            <TextView
+                android:id="@+id/ivTumbler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:padding="10dp"
+                android:text="Tumbler"
+                android:textColor="@color/com_facebook_blue"
+                android:textSize="14sp" />
+
+            <Switch
+                android:id="@+id/tumbSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:layout_editor_absoluteX="330dp"
+                tools:layout_editor_absoluteY="61dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="324dp">
+
+            <TextView
+                android:id="@+id/ivTinder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:padding="10dp"
+                android:text="Tinder"
+                android:textColor="@color/com_facebook_blue"
+                android:textSize="14sp" />
+
+            <Switch
+                android:id="@+id/tindSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:layout_editor_absoluteX="330dp"
+                tools:layout_editor_absoluteY="61dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="324dp">
+
+            <TextView
+                android:id="@+id/ivReddit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:padding="10dp"
+                android:text="Reddit"
+                android:textColor="@color/com_facebook_blue"
+                android:textSize="14sp" />
+
+            <Switch
+                android:id="@+id/redSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:layout_editor_absoluteX="330dp"
+                tools:layout_editor_absoluteY="61dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="324dp">
+
+            <TextView
+                android:id="@+id/ivLinkedin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:padding="10dp"
+                android:text="Linkedin"
+                android:textColor="@color/com_facebook_blue"
+                android:textSize="14sp" />
+
+            <Switch
+                android:id="@+id/linSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:layout_editor_absoluteX="330dp"
+                tools:layout_editor_absoluteY="61dp" />
+
+        </LinearLayout>
+
+
+
+</LinearLayout>
+</ScrollView>

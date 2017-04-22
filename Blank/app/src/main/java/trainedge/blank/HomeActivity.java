@@ -55,13 +55,27 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         navigationView.setNavigationItemSelectedListener(this);
 
         ImageView ivFacebook = (ImageView) findViewById(R.id.ivFacebook);
-        ImageView ivGoogle = (ImageView) findViewById(R.id.ivGoogle);
-        ImageView ivTwitter = (ImageView) findViewById(R.id.ivTwitter);
         ImageView ivInstagram = (ImageView) findViewById(R.id.ivInstagram);
+        ImageView ivTwitter = (ImageView) findViewById(R.id.ivTwitter);
+        ImageView ivGoogle = (ImageView) findViewById(R.id.ivGoogle);
+        ImageView ivPinterest = (ImageView) findViewById(R.id.ivPinterest);
+        ImageView ivFlickr = (ImageView) findViewById(R.id.ivFlickr);
+        ImageView ivTumblr = (ImageView) findViewById(R.id.ivTumblr);
+        ImageView ivTinder = (ImageView) findViewById(R.id.ivTinder);
+        ImageView ivReddit = (ImageView) findViewById(R.id.ivReddit);
+        ImageView ivInkedin = (ImageView) findViewById(R.id.ivLinkedin);
+
         ivFacebook.setOnClickListener(this);
-        ivGoogle.setOnClickListener(this);
-        ivTwitter.setOnClickListener(this);
         ivInstagram.setOnClickListener(this);
+        ivTwitter.setOnClickListener(this);
+        ivGoogle.setOnClickListener(this);
+        ivPinterest.setOnClickListener(this);
+        ivFlickr.setOnClickListener(this);
+        ivTumblr.setOnClickListener(this);
+        ivTinder.setOnClickListener(this);
+        ivReddit.setOnClickListener(this);
+        ivInkedin.setOnClickListener(this);
+
 
     }
 
@@ -71,16 +85,16 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         int id = item.getItemId();
 
         if (id == R.id.navabout) {
-            Intent abt=new Intent(HomeActivity.this,aboutActivity.class);
+            Intent abt = new Intent(HomeActivity.this, aboutActivity.class);
             startActivity(abt);
             // Handle the camera action
         } else if (id == R.id.navSetting) {
-            Intent set=new Intent(HomeActivity.this,SettinActivity.class);
+            Intent set = new Intent(this, SettinActivity.class);
             startActivity(set);
 
 
         } else if (id == R.id.navFeedabck) {
-            Intent fed=new Intent(HomeActivity.this,Feedback.class);
+            Intent fed = new Intent(HomeActivity.this, Feedback.class);
             startActivity(fed);
 
         } else if (id == R.id.nav_send) {
@@ -110,37 +124,54 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         switch (v.getId()) {
             case R.id.ivFacebook:
                 Intent fbIntent = new Intent(this, SocialActivity.class);
-                fbIntent.putExtra(POSITION,0);
+                fbIntent.putExtra(POSITION, 0);
                 startActivity(fbIntent);
                 break;
             case R.id.ivGoogle:
                 Intent googleIntent = new Intent(this, SocialActivity.class);
-                googleIntent.putExtra(POSITION,3);
+                googleIntent.putExtra(POSITION, 3);
                 startActivity(googleIntent);
                 break;
             case R.id.ivTwitter:
-                startActivity(new Intent(this, TwitterActivity.class));
+                Intent twitterIntent = new Intent(this, SocialActivity.class);
+                twitterIntent.putExtra(POSITION, 2);
+                startActivity(twitterIntent);
                 break;
             case R.id.ivInstagram:
-                startActivity(new Intent(this, InstagramActivity.class));
+                Intent instaIntent = new Intent(this, SocialActivity.class);
+                instaIntent.putExtra(POSITION, 1);
+                startActivity(instaIntent);
                 break;
             case R.id.wbTinder:
-                startActivity(new Intent(this, TinderActivity.class));
+                Intent tinderIntent = new Intent(this, SocialActivity.class);
+                tinderIntent.putExtra(POSITION, 7);
+                startActivity(tinderIntent);
                 break;
             case R.id.wbTumbler:
-                startActivity(new Intent(this, TumblerActivity.class));
+                Intent tumblerIntent = new Intent(this, SocialActivity.class);
+                tumblerIntent.putExtra(POSITION, 6);
+                startActivity(tumblerIntent);
                 break;
             case R.id.ivPinterest:
-                startActivity(new Intent(this, PinterestActivity.class));
+                Intent pinterestIntent = new Intent(this, SocialActivity.class);
+                pinterestIntent.putExtra(POSITION, 4);
+                startActivity(pinterestIntent);
                 break;
             case R.id.wvLinkedin:
-                startActivity(new Intent(this, LinkedinActivity.class));
+                Intent linkedIntent = new Intent(this, SocialActivity.class);
+                linkedIntent.putExtra(POSITION, 9);
+                startActivity(linkedIntent);
                 break;
             case R.id.wbReddit:
-                startActivity(new Intent(this, RedditActivity.class));
+                Intent redditIntent = new Intent(this, SocialActivity.class);
+                redditIntent.putExtra(POSITION, 8);
+                startActivity(redditIntent);
                 break;
             case R.id.ivFlickr:
-                startActivity(new Intent(this, FlickrActivity.class));
+                Intent flikrIntent = new Intent(this, SocialActivity.class);
+                flikrIntent.putExtra(POSITION, 5);
+                startActivity(flikrIntent);
+
                 break;
         }
     }

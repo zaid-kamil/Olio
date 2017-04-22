@@ -79,12 +79,15 @@
             android:name=".SocialActivity"
             android:label="@string/title_activity_social"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".feedbackActivity"
-            android:label="@string/title_activity_feedback"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".FeedbackActivity" />
         <activity android:name=".aboutActivity"></activity>
+        <activity
+            android:name=".SettinActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+        <activity
+            android:name=".Feedback"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
     </application>
 
 </manifest>
