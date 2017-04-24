@@ -3,11 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:paddingTop="60dp">
+
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -23,7 +26,8 @@
                 android:padding="10dp"
                 android:text="Facebook"
                 android:textColor="@color/com_facebook_blue"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:textStyle="bold" />
 
             <Switch
                 android:id="@+id/fbSwitch"
@@ -49,8 +53,9 @@
                 android:layout_weight="5"
                 android:padding="10dp"
                 android:text="Instagram"
-                android:textColor="@color/com_facebook_blue"
-                android:textSize="14sp" />
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="14sp"
+                android:textStyle="bold" />
 
             <Switch
                 android:id="@+id/insSwitch"
@@ -61,6 +66,7 @@
                 tools:layout_editor_absoluteY="61dp" />
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -75,8 +81,9 @@
                 android:layout_weight="5"
                 android:padding="10dp"
                 android:text="Twitter"
-                android:textColor="@color/com_facebook_blue"
-                android:textSize="14sp" />
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                android:textStyle="bold" />
 
             <Switch
                 android:id="@+id/twSwitch"
@@ -87,6 +94,7 @@
                 tools:layout_editor_absoluteY="61dp" />
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -101,8 +109,9 @@
                 android:layout_weight="5"
                 android:padding="10dp"
                 android:text="Google"
-                android:textColor="@color/com_facebook_blue"
-                android:textSize="14sp" />
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="14sp"
+                android:textStyle="bold" />
 
             <Switch
                 android:id="@+id/gSwitch"
@@ -113,6 +122,7 @@
                 tools:layout_editor_absoluteY="61dp" />
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -127,8 +137,9 @@
                 android:layout_weight="5"
                 android:padding="10dp"
                 android:text="Pinterest"
-                android:textColor="@color/com_facebook_blue"
-                android:textSize="14sp" />
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="14sp"
+                android:textStyle="bold" />
 
             <Switch
                 android:id="@+id/pintSwitch"
@@ -139,6 +150,7 @@
                 tools:layout_editor_absoluteY="61dp" />
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -153,8 +165,9 @@
                 android:layout_weight="5"
                 android:padding="10dp"
                 android:text="Flickr"
-                android:textColor="@color/com_facebook_blue"
-                android:textSize="14sp" />
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="14sp"
+                android:textStyle="bold" />
 
             <Switch
                 android:id="@+id/flicSwitch"
@@ -165,6 +178,7 @@
                 tools:layout_editor_absoluteY="61dp" />
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -179,8 +193,9 @@
                 android:layout_weight="5"
                 android:padding="10dp"
                 android:text="Tumbler"
-                android:textColor="@color/com_facebook_blue"
-                android:textSize="14sp" />
+                android:textColor="@color/com_smart_login_code"
+                android:textSize="14sp"
+                android:textStyle="bold" />
 
             <Switch
                 android:id="@+id/tumbSwitch"
@@ -191,6 +206,7 @@
                 tools:layout_editor_absoluteY="61dp" />
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -205,8 +221,9 @@
                 android:layout_weight="5"
                 android:padding="10dp"
                 android:text="Tinder"
-                android:textColor="@color/com_facebook_blue"
-                android:textSize="14sp" />
+                android:textColor="?attr/actionModeSplitBackground"
+                android:textSize="14sp"
+                android:textStyle="bold" />
 
             <Switch
                 android:id="@+id/tindSwitch"
@@ -217,6 +234,7 @@
                 tools:layout_editor_absoluteY="61dp" />
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -231,8 +249,9 @@
                 android:layout_weight="5"
                 android:padding="10dp"
                 android:text="Reddit"
-                android:textColor="@color/com_facebook_blue"
-                android:textSize="14sp" />
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="14sp"
+                android:textStyle="bold" />
 
             <Switch
                 android:id="@+id/redSwitch"
@@ -243,6 +262,7 @@
                 tools:layout_editor_absoluteY="61dp" />
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -257,8 +277,9 @@
                 android:layout_weight="5"
                 android:padding="10dp"
                 android:text="Linkedin"
-                android:textColor="@color/com_facebook_blue"
-                android:textSize="14sp" />
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                android:textStyle="bold" />
 
             <Switch
                 android:id="@+id/linSwitch"
@@ -271,6 +292,5 @@
         </LinearLayout>
 
 
-
-</LinearLayout>
+    </LinearLayout>
 </ScrollView>

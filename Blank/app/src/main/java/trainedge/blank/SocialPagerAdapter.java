@@ -87,7 +87,7 @@ class SocialPagerAdapter extends FragmentPagerAdapter {
             case 7:
                 return "Tinder";
             case 8:
-                return "Redit";
+                return "Reddit";
             case 9:
                 return "Linkedin";
         }

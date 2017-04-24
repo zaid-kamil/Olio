@@ -79,15 +79,20 @@
             android:name=".SocialActivity"
             android:label="@string/title_activity_social"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".aboutActivity"></activity>
+        <activity android:name=".aboutActivity" />
         <activity
             android:name=".SettinActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            />
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Feedback"
-            android:theme="@style/AppTheme.NoActionBar"
-            />
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider448547568820816"
+            android:exported="true" />
+
+        <activity android:name=".ShareActivity"></activity>
     </application>
 
 </manifest>
