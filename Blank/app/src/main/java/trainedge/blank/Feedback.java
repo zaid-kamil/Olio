@@ -10,8 +10,7 @@ import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageButton;
-import android.widget.Toast;
+
 
 
 public class Feedback extends AppCompatActivity implements View.OnClickListener, TextWatcher {
@@ -24,9 +23,6 @@ public class Feedback extends AppCompatActivity implements View.OnClickListener,
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_feedback);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         erfeed = (EditText) findViewById(R.id.er_feed);
         ermail = (EditText) findViewById(R.id.er_mail);

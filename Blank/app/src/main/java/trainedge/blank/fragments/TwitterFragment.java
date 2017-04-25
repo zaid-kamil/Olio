@@ -11,13 +11,6 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 import trainedge.blank.R;
-import trainedge.blank.TwitterActivity;
-
-import static trainedge.blank.TwitterActivity.TWITTER_LINK;
-
-/**
- * A simple {@link Fragment} subclass.
- */
 public class TwitterFragment extends Fragment {
     public static final String TWITTER_LINK = "https://mobile.twitter.com";
 

@@ -31,51 +31,6 @@
             android:value="@string/facebook_app_id" />
 
         <activity
-            android:name=".FacebookActivity"
-            android:label="@string/title_activity_facebook"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="trainedge.blank.MainActivity" />
-        </activity>
-        <activity
-            android:name=".InstagramActivity"
-            android:label="@string/title_activity_instagram"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".TwitterActivity"
-            android:label="@string/title_activity_twitter"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".GoogleActivity"
-            android:label="@string/title_activity_google"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".PinterestActivity"
-            android:label="@string/title_activity_pinterest"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".RedditActivity"
-            android:label="@string/title_activity_reddit"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".TinderActivity"
-            android:label="@string/title_activity_tinder"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".LinkedinActivity"
-            android:label="@string/title_activity_linkedin"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".TumblerActivity"
-            android:label="@string/title_activity_tumbler"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".FlickrActivity"
-            android:label="@string/title_activity_flickr"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
             android:name=".SocialActivity"
             android:label="@string/title_activity_social"
             android:theme="@style/AppTheme.NoActionBar" />

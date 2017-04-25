@@ -11,9 +11,6 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 import trainedge.blank.R;
-import trainedge.blank.RedditActivity;
-
-import static trainedge.blank.RedditActivity.REDDIT_LINK;
 
 /**
  * A simple {@link Fragment} subclass.

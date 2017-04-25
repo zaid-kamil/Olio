@@ -32,7 +32,7 @@ public class TumblerFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_tumbler, container, false);
 
-        WebView wbTumbler= (WebView) view.findViewById(R.id.wbTumbler);
+        WebView wbTumbler= (WebView) view.findViewById(R.id.wbTumblr);
 
         wbTumbler.getSettings().setJavaScriptEnabled(true);
         wbTumbler.setWebViewClient(new TumbCallback());

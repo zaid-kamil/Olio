@@ -11,7 +11,6 @@ import android.webkit.WebResourceRequest;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-import trainedge.blank.FlickrActivity;
 import trainedge.blank.R;
 
 /**

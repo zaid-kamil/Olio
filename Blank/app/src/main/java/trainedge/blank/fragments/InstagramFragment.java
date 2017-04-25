@@ -10,10 +10,7 @@ import android.webkit.WebResourceRequest;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-import trainedge.blank.InstagramActivity;
 import trainedge.blank.R;
-
-import static trainedge.blank.InstagramActivity.INSTAGRAM_LINK;
 
 /**
  * A simple {@link Fragment} subclass.

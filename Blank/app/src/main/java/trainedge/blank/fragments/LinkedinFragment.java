@@ -10,11 +10,7 @@ import android.webkit.WebResourceRequest;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-import trainedge.blank.LinkedinActivity;
 import trainedge.blank.R;
-
-import static trainedge.blank.LinkedinActivity.LINKEDIN_LINK;
-
 /**
  * A simple {@link Fragment} subclass.
  */

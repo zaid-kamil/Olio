@@ -11,15 +11,10 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 import trainedge.blank.R;
-import trainedge.blank.TinderActivity;
-
-import static trainedge.blank.TinderActivity.TINDER_LINK;
-
-/**
- * A simple {@link Fragment} subclass.
- */
 public class TinderFragment extends Fragment {
 
+
+    public static final String TINDER_LINK="";
 
     public TinderFragment() {
         // Required empty public constructor

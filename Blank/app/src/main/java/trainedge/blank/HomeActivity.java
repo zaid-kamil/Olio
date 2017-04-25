@@ -76,7 +76,6 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         ivReddit.setOnClickListener(this);
         ivInkedin.setOnClickListener(this);
 
-
     }
 
     @Override
@@ -110,8 +109,6 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
             share.putExtra(Intent.EXTRA_TEXT, "Your friend has invited you to join the app./n To join click the link");
             startActivity(Intent.createChooser(share, "Share via..."));
 
-        } else if (id == R.id.nav_send) {
-
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -127,51 +124,51 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 fbIntent.putExtra(POSITION, 0);
                 startActivity(fbIntent);
                 break;
-            case R.id.ivGoogle:
-                Intent googleIntent = new Intent(this, SocialActivity.class);
-                googleIntent.putExtra(POSITION, 3);
-                startActivity(googleIntent);
+            case R.id.ivInstagram:
+                Intent instaIntent = new Intent(this, SocialActivity.class);
+                instaIntent.putExtra(POSITION, 1);
+                startActivity(instaIntent);
                 break;
             case R.id.ivTwitter:
                 Intent twitterIntent = new Intent(this, SocialActivity.class);
                 twitterIntent.putExtra(POSITION, 2);
                 startActivity(twitterIntent);
                 break;
-            case R.id.ivInstagram:
-                Intent instaIntent = new Intent(this, SocialActivity.class);
-                instaIntent.putExtra(POSITION, 1);
-                startActivity(instaIntent);
-                break;
-            case R.id.wbTinder:
-                Intent tinderIntent = new Intent(this, SocialActivity.class);
-                tinderIntent.putExtra(POSITION, 7);
-                startActivity(tinderIntent);
-                break;
-            case R.id.wbTumbler:
-                Intent tumblerIntent = new Intent(this, SocialActivity.class);
-                tumblerIntent.putExtra(POSITION, 6);
-                startActivity(tumblerIntent);
+            case R.id.ivGoogle:
+                Intent googleIntent = new Intent(this, SocialActivity.class);
+                googleIntent.putExtra(POSITION, 3);
+                startActivity(googleIntent);
                 break;
             case R.id.ivPinterest:
                 Intent pinterestIntent = new Intent(this, SocialActivity.class);
                 pinterestIntent.putExtra(POSITION, 4);
                 startActivity(pinterestIntent);
                 break;
-            case R.id.wvLinkedin:
-                Intent linkedIntent = new Intent(this, SocialActivity.class);
-                linkedIntent.putExtra(POSITION, 9);
-                startActivity(linkedIntent);
+            case R.id.ivFlickr:
+                Intent flikrIntent = new Intent(this, SocialActivity.class);
+                flikrIntent.putExtra(POSITION, 5);
+                startActivity(flikrIntent);
+                break;
+
+            case R.id.wbTumblr:
+                Intent tumblerIntent = new Intent(this, SocialActivity.class);
+                tumblerIntent.putExtra(POSITION, 6);
+                startActivity(tumblerIntent);
+                break;
+            case R.id.wbTinder:
+                Intent tinderIntent = new Intent(this, SocialActivity.class);
+                tinderIntent.putExtra(POSITION, 7);
+                startActivity(tinderIntent);
                 break;
             case R.id.wbReddit:
                 Intent redditIntent = new Intent(this, SocialActivity.class);
                 redditIntent.putExtra(POSITION, 8);
                 startActivity(redditIntent);
                 break;
-            case R.id.ivFlickr:
-                Intent flikrIntent = new Intent(this, SocialActivity.class);
-                flikrIntent.putExtra(POSITION, 5);
-                startActivity(flikrIntent);
-
+            case R.id.wvLinkedin:
+                Intent linkedIntent = new Intent(this, SocialActivity.class);
+                linkedIntent.putExtra(POSITION, 9);
+                startActivity(linkedIntent);
                 break;
         }
     }
