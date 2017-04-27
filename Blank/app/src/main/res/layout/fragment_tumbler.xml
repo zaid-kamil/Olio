@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     tools:context="trainedge.blank.fragments.TumblerFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+
     <WebView
         android:id="@+id/wbTumblr"
         android:layout_width="match_parent"

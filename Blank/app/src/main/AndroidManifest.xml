@@ -47,7 +47,8 @@
             android:authorities="com.facebook.app.FacebookContentProvider448547568820816"
             android:exported="true" />
 
-        <activity android:name=".ShareActivity"></activity>
+        <activity android:name=".ShareActivity" />
+        <activity android:name=".StatusActivity"></activity>
     </application>
 
 </manifest>

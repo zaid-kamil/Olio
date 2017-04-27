@@ -20,16 +20,12 @@ import trainedge.blank.fragments.TinderFragment;
 import trainedge.blank.fragments.TumblerFragment;
 import trainedge.blank.fragments.TwitterFragment;
 
-/**
- * Created by User on 14-04-2017.
- */
-
 class SocialPagerAdapter extends FragmentPagerAdapter {
 
+    Context context;
 
-    private final Context context;
 
-    public SocialPagerAdapter(Context context, FragmentManager fm, AppBarLayout appbar) {
+    SocialPagerAdapter(Context context, FragmentManager fm, AppBarLayout appbar) {
         super(fm);
         this.context = context;
     }
